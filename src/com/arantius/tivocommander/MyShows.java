@@ -1,5 +1,5 @@
 /*
-TiVo Commander allows control of a TiVo Premiere device.
+Open Commander for TiVo allows control of a TiVo Premiere device.
 Copyright (C) 2011  Anthony Lieuallen (arantius@gmail.com)
 
 This program is free software; you can redistribute it and/or modify
@@ -361,7 +361,7 @@ public class MyShows extends ListActivity {
     Bundle bundle = getIntent().getExtras();
     if (bundle != null) {
       mFolderId = bundle.getString("folderId");
-      setTitle("TiVo Commander - " + bundle.getString("folderName"));
+      setTitle("Open Commander for TiVo - " + bundle.getString("folderName"));
     } else {
       mFolderId = null;
     }
