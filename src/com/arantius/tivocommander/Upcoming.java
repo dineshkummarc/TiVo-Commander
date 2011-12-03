@@ -101,7 +101,7 @@ public class Upcoming extends ListActivity {
               }
               listItem.put("icon", R.drawable.blank);
               if (item.has("recordingForOfferId")) {
-                listItem.put("icon", R.drawable.check);
+                listItem.put("icon", R.drawable.flag);
               }
               listItem.put("details", details);
               listItem.put("title", item.has("subtitle") ? item
