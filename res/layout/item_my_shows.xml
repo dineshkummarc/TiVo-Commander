@@ -32,7 +32,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
       android:layout_height="wrap_content" android:layout_width="wrap_content"
       android:focusable="false" android:focusableInTouchMode="false"
       android:textColor="#000000" android:textSize="9dip"
-      android:paddingTop="10dip" android:paddingLeft="9dip"
+      android:paddingTop="10dip" android:paddingLeft="8dip"
       android:textStyle="bold" android:text="55" />
   </FrameLayout>
   <LinearLayout android:orientation="vertical"
