@@ -361,7 +361,7 @@ public class MyShows extends ListActivity {
     Bundle bundle = getIntent().getExtras();
     if (bundle != null) {
       mFolderId = bundle.getString("folderId");
-      setTitle("Open Commander for TiVo - " + bundle.getString("folderName"));
+      setTitle(bundle.getString("folderName") + " - Open Commander for TiVo");
     } else {
       mFolderId = null;
     }
