@@ -25,49 +25,142 @@ with this program; if not, write to the Free Software Foundation, Inc.,
     android:fadingEdge="vertical" android:fadingEdgeLength="20dip"
     android:layout_height="fill_parent" android:layout_width="fill_parent"
   >
-    <RelativeLayout android:id="@+id/remote_layout_inner"
-      android:layout_width="320dip" android:layout_height="895dip"
-      android:background="@drawable/remote_full" android:layout_gravity="center_horizontal"
+    <LinearLayout android:orientation="vertical"
+      android:layout_width="fill_parent" android:layout_height="fill_parent"
+      android:padding="4dip"
     >
-      <Button android:id="@+id/remote_tivo"        android:text="" android:layout_marginLeft="126dip" android:layout_width="66dip" android:layout_marginTop="52dip"  android:layout_height="54dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_liveTv"      android:text="" android:layout_marginLeft="204dip" android:layout_width="44dip" android:layout_marginTop="64dip"  android:layout_height="44dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_info"        android:text="" android:layout_marginLeft="228dip" android:layout_width="43dip" android:layout_marginTop="111dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_zoom"        android:text="" android:layout_marginLeft="35dip"  android:layout_width="43dip" android:layout_marginTop="163dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_guide"       android:text="" android:layout_marginLeft="241dip" android:layout_width="43dip" android:layout_marginTop="163dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_up"          android:text="" android:layout_marginLeft="138dip" android:layout_width="43dip" android:layout_marginTop="127dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_down"        android:text="" android:layout_marginLeft="138dip" android:layout_width="43dip" android:layout_marginTop="241dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_left"        android:text="" android:layout_marginLeft="87dip"  android:layout_width="43dip" android:layout_marginTop="186dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_right"       android:text="" android:layout_marginLeft="189dip" android:layout_width="43dip" android:layout_marginTop="186dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_select"      android:text="" android:layout_marginLeft="130dip" android:layout_width="59dip" android:layout_marginTop="186dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_channelUp"   android:text="" android:layout_marginLeft="238dip" android:layout_width="43dip" android:layout_marginTop="215dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_channelDown" android:text="" android:layout_marginLeft="207dip" android:layout_width="43dip" android:layout_marginTop="274dip" android:layout_height="42dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_thumbsDown"  android:text="" android:layout_marginLeft="59dip"  android:layout_width="43dip" android:layout_marginTop="336dip" android:layout_height="49dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_thumbsUp"    android:text="" android:layout_marginLeft="216dip" android:layout_width="43dip" android:layout_marginTop="336dip" android:layout_height="49dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_record"      android:text="" android:layout_marginLeft="138dip" android:layout_width="43dip" android:layout_marginTop="312dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_play"        android:text="" android:layout_marginLeft="140dip" android:layout_width="43dip" android:layout_marginTop="368dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_pause"       android:text="" android:layout_marginLeft="130dip" android:layout_width="63dip" android:layout_marginTop="420dip" android:layout_height="67dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_reverse"     android:text="" android:layout_marginLeft="71dip"  android:layout_width="43dip" android:layout_marginTop="433dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_forward"     android:text="" android:layout_marginLeft="207dip" android:layout_width="43dip" android:layout_marginTop="433dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_slow"        android:text="" android:layout_marginLeft="141dip" android:layout_width="43dip" android:layout_marginTop="496dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_replay"      android:text="" android:layout_marginLeft="55dip"  android:layout_width="43dip" android:layout_marginTop="513dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_advance"     android:text="" android:layout_marginLeft="221dip" android:layout_width="43dip" android:layout_marginTop="513dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_actionA"     android:text="" android:layout_marginLeft="63dip"  android:layout_width="43dip" android:layout_marginTop="570dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_actionB"     android:text="" android:layout_marginLeft="113dip" android:layout_width="43dip" android:layout_marginTop="581dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_actionC"     android:text="" android:layout_marginLeft="163dip" android:layout_width="43dip" android:layout_marginTop="581dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_actionD"     android:text="" android:layout_marginLeft="213dip" android:layout_width="43dip" android:layout_marginTop="570dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num1"        android:text="" android:layout_marginLeft="55dip"  android:layout_width="48dip" android:layout_marginTop="621dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num2"        android:text="" android:layout_marginLeft="135dip" android:layout_width="48dip" android:layout_marginTop="631dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num3"        android:text="" android:layout_marginLeft="216dip" android:layout_width="48dip" android:layout_marginTop="621dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num4"        android:text="" android:layout_marginLeft="59dip"  android:layout_width="48dip" android:layout_marginTop="664dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num5"        android:text="" android:layout_marginLeft="136dip" android:layout_width="48dip" android:layout_marginTop="674dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num6"        android:text="" android:layout_marginLeft="211dip" android:layout_width="48dip" android:layout_marginTop="664dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num7"        android:text="" android:layout_marginLeft="64dip"  android:layout_width="48dip" android:layout_marginTop="707dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num8"        android:text="" android:layout_marginLeft="136dip" android:layout_width="48dip" android:layout_marginTop="717dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num9"        android:text="" android:layout_marginLeft="207dip" android:layout_width="48dip" android:layout_marginTop="707dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_num0"        android:text="" android:layout_marginLeft="136dip" android:layout_width="48dip" android:layout_marginTop="761dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_clear"       android:text="" android:layout_marginLeft="69dip"  android:layout_width="48dip" android:layout_marginTop="752dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-      <Button android:id="@+id/remote_enter"       android:text="" android:layout_marginLeft="201dip" android:layout_width="48dip" android:layout_marginTop="753dip" android:layout_height="39dip" android:onClick="onClick" android:background="@drawable/blank" />
-    </RelativeLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <TextView android:layout_weight="2" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button   android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_tivo"        android:text="TiVo Central"  />
+        <TextView android:layout_weight="2" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      </LinearLayout>
+
+          <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_liveTv"      android:text="Live TV" />
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_info"        android:text="Info" />
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_zoom"        android:text="Zoom" />
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_guide"       android:text="Guide" />
+      </LinearLayout>
+
+      <!-- Arrows, Select -->
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+      >
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button   android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_up"          android:text="▲" />
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_left"        android:text="◀" />
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_select"      android:text="Select" />
+        <Button android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_right"       android:text="▶" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button   android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_down"        android:text="▼" />
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      </LinearLayout>
+
+      <!-- Playback controls. -->
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+      >
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_replay"      android:text="❚◀" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_advance"     android:text="▶❚" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_play"        android:text="▶" />
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_reverse"     android:text="◀◀" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_pause"       android:text="❚❚" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_forward"     android:text="▶▶" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_slow"        android:text="❚▶" />
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      </LinearLayout>
+
+      <!-- All the rest except ... -->
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_actionA"     android:text="A" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_actionB"     android:text="B" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_actionC"     android:text="C" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_actionD"     android:text="D" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_channelUp"   android:text="Ch +" />
+        <TextView android:layout_weight="1" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_thumbsDown"  android:text="Thumb Up" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_channelDown" android:text="Ch -" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_record"      android:text="●" android:textColor="#FF0000" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_thumbsUp"    android:text="Thumb Dn" />
+      </LinearLayout>
+
+      <!-- Numbers, Clear, Enter. -->
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num1"        android:text="1" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num2"        android:text="2" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num3"        android:text="3" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num4"        android:text="4" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num5"        android:text="5" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num6"        android:text="6" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num7"        android:text="7" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num8"        android:text="8" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num9"        android:text="9" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+      >
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_clear"       android:text="Clear" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_num0"        android:text="0" />
+        <Button android:layout_weight="1"  android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick" android:id="@+id/remote_enter"       android:text="Enter" />
+      </LinearLayout>
+    </LinearLayout>
   </ScrollView>
   <ImageView android:layout_marginRight="4dip"
     android:layout_width="wrap_content" android:layout_height="wrap_content"
