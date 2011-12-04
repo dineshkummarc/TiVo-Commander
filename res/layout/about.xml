@@ -36,11 +36,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
       android:gravity="center_horizontal" android:layout_gravity="center"
       android:layout_margin="8dip"/>
 
-    <TextView android:id="@+id/textView2"
-      android:text="All relevant images and marks ® and ™ and © by TiVo Inc."
-      android:layout_width="wrap_content" android:layout_height="wrap_content"
-      android:layout_marginBottom="6dip" />
-
     <TextView android:id="@+id/textView3"
       android:text="Contains the Jackson JSON processing library, used under the terms of the Apache (AL 2.0) license."
       android:layout_width="wrap_content" android:layout_height="wrap_content"
